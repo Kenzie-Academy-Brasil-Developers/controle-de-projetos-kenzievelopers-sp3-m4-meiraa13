@@ -9,6 +9,13 @@ interface IProject {
     developerId: number
 }
 
+interface IProjectTechRequest {
+    addedIn:Date,
+    technologyId:number,
+    projectId:number
+}
+
 type TProjectRequest = Omit<IProject, 'id'>
 
-export { IProject, TProjectRequest}
+
+export {IProject, IProjectTechRequest, TProjectRequest }

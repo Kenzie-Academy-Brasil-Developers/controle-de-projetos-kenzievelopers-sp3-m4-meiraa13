@@ -101,4 +101,6 @@ const ensureDeveloperExists  = async (req:Request, res:Response, next:NextFuncti
     return next()
 }
 
+
+
 export { verifyEmailExists, ensureDeveloperHasInfo, ensureDeveloperOSisRight, ensureDeveloperExists }

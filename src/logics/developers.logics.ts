@@ -121,10 +121,8 @@ const deleteDeveloper = async (req:Request, res:Response):Promise<Response> =>{
         values:[params.id]
     }
 
-    const queryResult:QueryResult<IDeveloper> = await client.query(queryConfig)
-
+    await client.query(queryConfig)
     return res.status(204).send()
-
 }
 
 
